@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+
+    <style>
+    body {
+      background: #0be096;
+      height: 100vh;
+    }
+    </style>
+
+    <title>Login Page</title>
+  </head>
+  <body>
+
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card shadow-none" style="border-radius: 25px;">
+            <h5 class="card-header black-text text-center py-4" style="border-radius: 25px 25px 0 0;">
+              <strong>Authenticate</strong>
+            </h5>
+
+            <div class="card-body px-lg-5 pt-0">
+              <form class="text-center" style="color: #0be096" method="post" action="/">
+
+                <div class="md-form mt-3">
+                  <input type="text" id="user_id" name="user_id" class="form-control" placeholder="0123456789">
+                  <label for="user_id">Phone Number</label>
+                </div>
+
+                <div class="md-form">
+                  <select id="provider" name="provider" class="browser-default custom-select mb-4">
+                    <option value="" disabled selected>Choose your provider</option>
+                    <option value="fitbit">Fitbit</option>
+                    <option value="google_fit">Google Fit</option>
+                    <option value="oura">Oura</option>
+                    <option value="withings">Withings</option>
+                    <option value="whoop">Whoop</option>
+                    <option value="biostrap">Biostrap</option>
+                  </select>
+                </div>
+
+                <button class="btn btn-rounded btn-block my-4 waves-effect z-depth-0 font-weight-bold" type="submit" style="background-color: #0be096; color: white; border-radius: 8px;">Authenticate</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery, Bootstrap and MDB scripts -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+  </body>
+</html>

@@ -5,10 +5,14 @@ test:
 	python -m pytest -vv --cov=main test_*.py &&\
 	python -m pytest --nbval notebook.ipynb
 format:
-	black *.py
+	find src -type f -name "*.py" -print0 | xargs -0 black
 lint:
-	pylint --disable=R,C *.py
+	find src -type f -name "*.py" -print0 | xargs -0 pylint
 refactor: format lint
+run:
+	uvicorn src.main:app --reload
+run-docker:
+	docker-compose up --build
 deploy:
 	# deploy goes here
 all: install lint test format deploy
