@@ -1,4 +1,11 @@
 # SPIKE API Integration in Fast API
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![Contributors](https://img.shields.io/github/contributors/concaption/spike-api-integration.svg)](https://github.com/concaption/spike-api-integration/graphs/contributors)
+[![Code Style](https://img.shields.io/badge/code%20style-black-black.svg)](https://github.com/psf/black)
+[![GitHub Issues](https://img.shields.io/github/issues/concaption/spike-api-integration.svg)](https://github.com/concaption/spike-api-integration/issues)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/concaption/spike-api-integration/pulls)
+
 
 ![](./assets/screenshot.png)
 
